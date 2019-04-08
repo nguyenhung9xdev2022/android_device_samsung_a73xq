@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/a73xq/a73xq-vendor.mk)
 
