@@ -136,6 +136,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport.vendor \
+    libhwbinder.vendor
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.class_main.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.class_main.sh \
