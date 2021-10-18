@@ -1,3 +1,6 @@
+# Camera
+/mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
+
 # Rootfs
 /avb(/.*)?        u:object_r:system_file:s0
 /carrier(/.*)?    u:object_r:carrier_file:s0
