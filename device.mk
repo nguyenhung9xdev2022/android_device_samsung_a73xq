@@ -249,7 +249,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    android.hardware.vibrator@1.3-service.a73xq
 
 # VNDK
 PRODUCT_PACKAGES += \

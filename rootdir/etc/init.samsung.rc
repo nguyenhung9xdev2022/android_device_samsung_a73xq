@@ -57,6 +57,22 @@ on init
     chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
     chown root system /dev/cpuctl/top-app/cpu.uclamp.min
 
+    # Vibrator
+    chown system system /sys/class/leds/vibrator/trigger
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/timed_output/vibrator/intensity
+    chown system system /sys/class/timed_output/vibrator/multi_freq
+    chown system system /sys/class/timed_output/vibrator/haptic_engine
+    chown system system /sys/class/timed_output/vibrator/force_touch_intensity
+    chown system system /sys/class/timed_output/vibrator/motor_type
+    chown system system /sys/class/timed_output/vibrator/event_cmd
+    chown system system /sys/class/timed_output/vibrator/cp_trigger_index
+    chown system system /sys/class/timed_output/vibrator/cp_trigger_queue
+
 # Create carrier folder for HiddenMenu
 on post-fs
     mkdir /efs/carrier 0755 system system
