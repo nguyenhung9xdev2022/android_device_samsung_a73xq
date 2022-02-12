@@ -183,3 +183,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Uevent
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
