@@ -8,3 +8,5 @@
 /optics(/.*)?     u:object_r:vendor_file:s0
 /prism(/.*)?      u:object_r:system_file:s0
 /spu(/.*)?        u:object_r:spu_file:s0
+
+/(vendor|system/vendor)/bin/hw/macloader									u:object_r:macloader_exec:s0
