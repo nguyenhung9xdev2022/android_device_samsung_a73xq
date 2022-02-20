@@ -239,6 +239,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
