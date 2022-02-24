@@ -8,6 +8,8 @@ BOARD_VENDOR := samsung
 
 DEVICE_PATH := device/samsung/a73xq
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit from proprietary files
 include vendor/samsung/a73xq/BoardConfigVendor.mk
 
