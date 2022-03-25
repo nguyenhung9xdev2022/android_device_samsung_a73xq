@@ -280,6 +280,10 @@
             <instance>default</instance>
         </interface>
         <interface>
+            <name>IDisplayColorCalibration</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
             <name>IDisplayModes</name>
             <instance>default</instance>
         </interface>
@@ -288,6 +292,7 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::IAdaptiveBacklight/default</fqname>
+        <fqname>@2.0::IDisplayColorCalibration/default</fqname>
         <fqname>@2.0::IDisplayModes/default</fqname>
         <fqname>@2.0::ISunlightEnhancement/default</fqname>
     </hal>
