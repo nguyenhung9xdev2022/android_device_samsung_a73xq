@@ -109,6 +109,18 @@ TARGET_COPY_OUT_ODM := odm
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+BOARD_ROOT_EXTRA_FOLDERS := \
+    carrier \
+    dqmdbg \
+    efs \
+    keydata \
+    keyrefuge \
+    metadata \
+    omr \
+    optics \
+    prism \
+    spu
+
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
