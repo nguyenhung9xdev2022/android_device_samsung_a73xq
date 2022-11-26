@@ -64,7 +64,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_a73xq
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_a73xq
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a73xq
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
