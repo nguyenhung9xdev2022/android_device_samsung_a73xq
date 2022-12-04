@@ -145,3 +145,24 @@ vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libspeakercalibration.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
+
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib/libbthost_if.so
+vendor/lib/libsoc_helper.so
+vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib64/libbthost_if.so
+vendor/lib64/libsoc_helper.so
+vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
+
+# Bluetooth (A2DP)
+vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
+vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+
+# Bluetooth - firmware
+vendor/firmware/msbtfw11.mbn
+vendor/firmware/msbtfw11.tlv
