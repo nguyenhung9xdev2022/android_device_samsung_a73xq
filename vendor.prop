@@ -1,7 +1,7 @@
 # Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=1
+aaudio.mmap_policy=2
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.video=true
@@ -9,6 +9,7 @@ persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
 persist.vendor.audio.avs.afe_api_version=9
+persist.vendor.audio.bcl.enabled=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.tmic.enabled=false
 persist.vendor.audio.fluence.voicecall=true
@@ -16,97 +17,56 @@ persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.ras.enabled=false
-persist.vendor.audio.ring.filter.mask=0
-persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.speaker.prot.enable=true
 persist.vendor.audio.spv4.enable=true
+persist.vendor.audio.vbat.enabled=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.af.client_heap_size_kbyte=7168
-ro.audio.monitorRotation=true
-ro.vendor.audio.scenario.support=true
-ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
-ro.vendor.audio.soundfx.usb=true
-ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
-ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
-ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
-ro.vendor.audio.soundtrigger.appdefine.vop.level=10
-ro.vendor.audio.soundtrigger.lowpower=true
-ro.vendor.audio.soundtrigger.snr=16
-ro.vendor.audio.soundtrigger.training.level=50
-ro.vendor.audio.soundtrigger.xanzn.cnn.level=70
-ro.vendor.audio.soundtrigger.xanzn.gmm.level=50
-ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
-ro.vendor.audio.soundtrigger.xanzn.vop.level=10
-ro.vendor.audio.soundtrigger.xatx.cnn.level=45
-ro.vendor.audio.soundtrigger.xatx.gmm.level=30
-ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
-ro.vendor.audio.soundtrigger.xatx.vop.level=0
-ro.vendor.audio.soundtrigger=sva
-ro.vendor.audio.us.proximity=true
-vendor.audio.adm.buffering.ms=6
+vendor.audio.adm.buffering.ms=3
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
 vendor.audio.feature.a2dp_offload.enable=true
-vendor.audio.feature.afe_proxy.enable=true
-vendor.audio.feature.anc_headset.enable=false
 vendor.audio.feature.audiozoom.enable=false
-vendor.audio.feature.battery_listener.enable=true
-vendor.audio.feature.compr_cap.enable=false
-vendor.audio.feature.compr_voip.enable=false
-vendor.audio.feature.compress_in.enable=true
+vendor.audio.feature.compr_voip.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
-vendor.audio.feature.concurrent_capture.enable=true
-vendor.audio.feature.custom_stereo.enable=true
-vendor.audio.feature.deepbuffer_as_primary.enable=false
+vendor.audio.feature.concurrent_capture.enable=false
+vendor.audio.feature.deepbuffer_as_primary.enable=true
 vendor.audio.feature.display_port.enable=true
-vendor.audio.feature.dsm_feedback.enable=false
-vendor.audio.feature.dynamic_ecns.enable=false
-vendor.audio.feature.ext_hw_plugin.enable=false
 vendor.audio.feature.external_dsp.enable=false
 vendor.audio.feature.external_speaker.enable=false
-vendor.audio.feature.external_speaker_tfa.enable=false
-vendor.audio.feature.fluence.enable=true
 vendor.audio.feature.fm.enable=true
 vendor.audio.feature.hdmi_edid.enable=true
-vendor.audio.feature.hdmi_passthrough.enable=true
 vendor.audio.feature.hfp.enable=true
-vendor.audio.feature.hifi_audio.enable=false
 vendor.audio.feature.hwdep_cal.enable=false
 vendor.audio.feature.incall_music.enable=true
-vendor.audio.feature.keep_alive.enable=true
-vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.maxx_audio.enable=false
-vendor.audio.feature.multi_voice_session.enable=true
-vendor.audio.feature.power_mode.enable=true
-vendor.audio.feature.ras.enable=true
-vendor.audio.feature.record_play_concurency.enable=false
+vendor.audio.feature.multi_voice_session.enable=false
 vendor.audio.feature.snd_mon.enable=true
-vendor.audio.feature.spkr_prot.enable=false
-vendor.audio.feature.src_trkn.enable=true
-vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.usb_offload.enable=true
-vendor.audio.feature.usb_offload_burst_mode.enable=true
-vendor.audio.feature.usb_offload_sidetone_volume.enable=false
-vendor.audio.feature.vbat.enable=true
-vendor.audio.feature.wsa.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
-vendor.audio.hal.output.suspend.supported=false
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hal.output.suspend.supported=true
 vendor.audio.hw.aac.encoder=true
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
-vendor.audio.offload.track.enable=false
+vendor.audio.offload.track.enable=true
+vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=false
-vendor.audio.usb.disable.sidetone=true
+vendor.audio.spkr_prot.tx.sampling_rate=48000
+vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
-vendor.audio_hal.period_multiplier=3
+vendor.audio_hal.period_multiplier=4
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
@@ -123,22 +83,20 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
-vendor.bluetooth.soc=hastings
+vendor.qcom.bluetooth.soc=moselle
 
 # Camera
 camera.disable_zsl_mode=true
 
 # CNE
-persist.vendor.cne.feature=1
+persist.vendor.cne.feature=0
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
 # DPM
-persist.vendor.dpm.feature=1
 persist.vendor.dpm.idletimer.mode=default
-persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # DRM
@@ -197,11 +155,6 @@ vendor.display.use_smooth_motion=0
 vendor.gralloc.disable_ubwc=0
 
 # Media
-debug.config.media.video.aie.support=true
-debug.config.media.video.ais.support=true
-debug.config.media.video.frc.support=true
-debug.media.video.frc=false
-debug.media.video.vpp=false
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.aac_51_output_enabled=true
@@ -215,30 +168,11 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.demo.hdmirotationlock=false
 persist.mm.enable.prefetch=true
-ro.config.media_vol_default=15
-ro.config.media_vol_steps=25
-ro.config.vc_call_vol_steps=11
-ro.media.xml_variant.codecs=_lahaina
-ro.media.xml_variant.codecs_performance=_lahaina
-ro.vendor.media.video.frc.support=true
-ro.vendor.media.video.vpp.support=true
-vendor.media.vpp.aie.cade=100
-vendor.media.vpp.aie.ltm=1
-vendor.media.vpp.aie.ltmacebrih=0
-vendor.media.vpp.aie.ltmacebril=20
-vendor.media.vpp.aie.ltmacestr=37
-vendor.media.vpp.aie.ltmsatgain=55
-vendor.media.vpp.aie.ltmsatoff=55
-vendor.media.vpp.debug.value.use=false
+ro.config.vc_call_vol_steps=8
 vendor.mm.enable.qcom_parser=16777215
-vendor.media.target_variant=_lahaina
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=0
-
-# Qcom
-ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Qcomsysd
 persist.vendor.qcomsysd.enabled=1
@@ -246,48 +180,22 @@ persist.vendor.qcomsysd.enabled=1
 # Radio
 DEVICE_PROVISIONED=1
 keyguard.no_require_sim=true
-persist.radio.multisim.config=dsds
 persist.vendor.data.mode=concurrent
 persist.vendor.data.iwlan.enable=true
-persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=true
-persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.data_ltd_sys_ind=1
-persist.vendor.radio.dynamic_load_mbn=3
-persist.vendor.radio.dynamic_sar=1
-persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.enableadvancedscan=true
-persist.vendor.radio.force_ltd_sys_ind=1
-persist.vendor.radio.force_on_dc=true
-persist.vendor.radio.hidl_dev_service=true
-persist.vendor.radio.manual_nw_rej_ct=1
-persist.vendor.radio.mbn_trace=true
-persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.rat_on=combine
-persist.vendor.radio.redir_party_num=1
-persist.vendor.radio.sib16_support=1
-persist.vendor.radio.ucdetect.usb=true
 ril.subscription.types=NV,RUIM
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=33,33
-ro.telephony.call_ring.multiple=false
-ro.vendor.radio.5g=3
-ro.vendor.use_data_netmgrd=true
-telephony.lteOnCdmaDevice=1
-
-# Sensors
-persist.vendor.sensors.allow_non_default_discovery=true
-persist.vendor.sensors.on_change_sample_period=true
-persist.vendor.sensors.sync_request=true
+ro.vendor.sec.radio.def_network=9
+ro.vendor.use_data_netmgrd=false
 
 # SKU
 ro.boot.product.vendor.sku=lahaina
 
 # Storage
 ro.incremental.enable=yes
-
-# Thermal
-vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
 vendor.usb.diag.func.name=ffs

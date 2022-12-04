@@ -17,7 +17,10 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 
 # Netflix
-ro.netflix.bsp_rev=Q875-32408-1
+ro.netflix.bsp_rev=Q7325-SPY-33758-1
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
