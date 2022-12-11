@@ -325,12 +325,12 @@ vendor/lib64/libssd.so
 vendor/lib64/libtrustedapploader.so
 
 # DRM Widevine
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/gpfspath_oem_config.xml
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libwvdrmengine.so
 
 # DSP
 vendor/bin/dspservice
@@ -342,19 +342,19 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib64/hw/gatekeeper.mdfpp.so
 
 # GNSS
-system_ext/etc/permissions/izat.xt.srv.xml
 -system_ext/framework/izat.xt.srv.jar
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+system_ext/etc/permissions/izat.xt.srv.xml
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/etc/cacert_location.pem
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
@@ -444,6 +444,51 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+
+# QMI
+etc/permissions/privapp-permissions-qti.xml
+etc/sysconfig/qti_whitelist.xml
+vendor/bin/irsc_util
+vendor/etc/sec_config
+vendor/etc/sec_config_oem
+vendor/lib/libdiag.so
+vendor/lib/libdsi_netctrl.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqcmaputils.so
+vendor/lib/libqdi.so
+vendor/lib/libqdp.so
+vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_csvt_srvc.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmi_legacy.so
+vendor/lib/libqmiservices.so
+vendor/lib64/libdiag.so
+vendor/lib64/libdsi_netctrl.so
+vendor/lib64/libdsutils.so
+vendor/lib64/libidl.so
+vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqcmaputils.so
+vendor/lib64/libqdi.so
+vendor/lib64/libqdp.so
+vendor/lib64/libqmi.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqmi_client_helper.so
+vendor/lib64/libqmi_client_qmux.so
+vendor/lib64/libqmi_common_so.so
+vendor/lib64/libqmi_csi.so
+vendor/lib64/libqmi_csvt_srvc.so
+vendor/lib64/libqmi_encdec.so
+vendor/lib64/libqmi_legacy.so
+vendor/lib64/libqmiextservices.so
+vendor/lib64/libqmiservices-sem-ext.so
+vendor/lib64/libqmiservices.so
 
 # Trusted Execution Environment connector
 system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so
