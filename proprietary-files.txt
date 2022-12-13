@@ -497,3 +497,27 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_listener.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
+# WLAN
+vendor/bin/cnss-daemon
+vendor/bin/hw/macloader
+vendor/etc/init/init.vendor.wlan.rc
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_qcom_wcn6750.rc
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/aoa_cldb_swl14.bin
+vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/wlan/WCNSS_qcom_cfg.ini
+
+# WLAN - firmware
+vendor/firmware/qca6750/bdwlan.elf
+vendor/firmware/qca6750/bdwlan.elf1
+vendor/firmware/qca6750/bdwlan.elf10
+vendor/firmware/qca6750/bdwlan.elf2
+vendor/firmware/qca6750/qdss_trace_config.cfg
+vendor/firmware/qca6750/regdb.bin
+vendor/firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini
+vendor/firmware/wlan/qca_cld/qca6750/wlan_mac.bin
+vendor/firmware/wlan/qca_cld/wlan/WCNSS_qcom_cfg.ini
+vendor/firmware/wlan/qca_cld/wlan/wlan_mac.bin
+vendor/firmware/wlanmdsp.otaupdate
