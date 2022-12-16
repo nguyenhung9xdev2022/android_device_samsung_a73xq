@@ -437,6 +437,12 @@ vendor/lib64/libllvm-qcom.so
 vendor/firmware/a660_gmu.bin
 vendor/firmware/a660_sqe.fw
 
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
@@ -499,6 +505,19 @@ vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices-sem-ext.so
 vendor/lib64/libqmiservices.so
+
+# Listen
+vendor/lib/hw/sound_trigger.primary.lahaina.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2svarnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/libmulawdec.so
+vendor/lib/libsmwrapper.so
 
 # Media
 -vendor/etc/vintf/manifest/sec_c2_manifest_default0.xml
