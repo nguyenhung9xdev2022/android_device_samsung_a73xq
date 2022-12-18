@@ -835,6 +835,22 @@ vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/proto/std_ss_algo.proto
 vendor/etc/sensors/sns_reg_config
 
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/thermal-engine.conf
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
+vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
+vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/lib/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib/libhypervintf.so
+vendor/lib64/libhypervintf.so
+vendor/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so
+vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
+
 # Touchscreen firmware
 vendor/firmware/tsp_synaptics/s3908_a73xq_boe.bin
 vendor/firmware/tsp_synaptics/s3908_a73xq_csot.bin
