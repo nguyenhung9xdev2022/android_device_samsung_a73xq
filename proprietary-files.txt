@@ -851,6 +851,12 @@ vendor/lib64/libhypervintf.so
 vendor/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 
+# Time services
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
+vendor/etc/init/init.time_daemon.rc
+vendor/lib64/libtime_genoff.so
+
 # Touchscreen firmware
 vendor/firmware/tsp_synaptics/s3908_a73xq_boe.bin
 vendor/firmware/tsp_synaptics/s3908_a73xq_csot.bin
